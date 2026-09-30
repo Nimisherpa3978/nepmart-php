@@ -6,6 +6,12 @@ NepMart is a full-stack online shop concept for discovering local products, buil
 
 **Project by [Nimi Sherpa](https://github.com/Nimisherpa3978)** · [View the public repository](https://github.com/Nimisherpa3978/nepmart-php)
 
+## My Semester Project
+
+I developed NepMart as a **6th-semester B.Sc. CSIT e-commerce project** to put my coursework into practice by building a complete shopping workflow, not just a set of static pages. Using the technical resources available to me—including course concepts, software documentation, and repeated development and testing—I worked to connect the storefront, PHP backend, MySQL database, account sessions, staff roles, and payment-provider flows into one application.
+
+This project gave me practical experience with frontend interaction design, server-side validation, relational data modeling, authentication, inventory-aware order processing, and payment integration. I learned by building, testing, finding issues, and improving the work step by step. The eSewa connection is demonstrated with its UAT sandbox; this is a student learning project, not a production store.
+
 > **Demo status:** eSewa is configured for its UAT sandbox. No real payments are processed. Khalti integration code is present but needs merchant credentials. This project is a learning and portfolio demonstration, not a production-ready store.
 
 ## What You Can Explore
@@ -32,11 +38,11 @@ The project is designed to demonstrate more than a storefront UI:
 
 ## Technology
 
-| Layer | Tools |
-| --- | --- |
-| Frontend | HTML5, CSS3, vanilla JavaScript |
-| Backend | PHP 8+, PDO, PHP sessions |
-| Database | MySQL with InnoDB transactions |
+| Layer         | Tools                                                   |
+| ------------- | ------------------------------------------------------- |
+| Frontend      | HTML5, CSS3, vanilla JavaScript                         |
+| Backend       | PHP 8+, PDO, PHP sessions                               |
+| Database      | MySQL with InnoDB transactions                          |
 | Payment demos | eSewa ePay v2 UAT; Khalti ePayment integration scaffold |
 
 ## Run Locally
@@ -47,9 +53,9 @@ You need PHP 8 or later with `pdo_mysql` and `curl`, plus a running MySQL server
 2. Update the database connection values in [`api/config.php`](api/config.php) for your local MySQL account.
 3. From the project directory, start PHP’s development server:
 
-	```powershell
-	php -S localhost:8000
-	```
+   ```powershell
+   php -S localhost:8000
+   ```
 
 4. Open [http://localhost:8000](http://localhost:8000). Create a customer account from **Account** to try the account workflow.
 
@@ -72,17 +78,17 @@ To use live eSewa, set `ESEWA_MODE=live`, your own `ESEWA_PRODUCT_CODE` and `ESE
 
 ## Project Map
 
-| Path | Purpose |
-| --- | --- |
-| [`index.html`](index.html) | Storefront shell and navigation |
-| [`js/app.js`](js/app.js) | Shop views, cart, checkout, account UI, routing |
-| [`js/data.js`](js/data.js) | Demo product and coupon fallback data |
-| [`api/auth.php`](api/auth.php) | Registration, login, logout, and session identity |
-| [`api/order.php`](api/order.php) | Server-side order validation, stock update, and payment record creation |
-| [`api/payment/`](api/payment/) | eSewa and Khalti initiation and return handlers |
-| [`admin/orders.php`](admin/orders.php) | Staff order-status management |
-| [`admin/payments.php`](admin/payments.php) | Admin payment overview |
-| [`db/schema.sql`](db/schema.sql) | Database tables and sample catalogue data |
+| Path                                       | Purpose                                                                 |
+| ------------------------------------------ | ----------------------------------------------------------------------- |
+| [`index.html`](index.html)                 | Storefront shell and navigation                                         |
+| [`js/app.js`](js/app.js)                   | Shop views, cart, checkout, account UI, routing                         |
+| [`js/data.js`](js/data.js)                 | Demo product and coupon fallback data                                   |
+| [`api/auth.php`](api/auth.php)             | Registration, login, logout, and session identity                       |
+| [`api/order.php`](api/order.php)           | Server-side order validation, stock update, and payment record creation |
+| [`api/payment/`](api/payment/)             | eSewa and Khalti initiation and return handlers                         |
+| [`admin/orders.php`](admin/orders.php)     | Staff order-status management                                           |
+| [`admin/payments.php`](admin/payments.php) | Admin payment overview                                                  |
+| [`db/schema.sql`](db/schema.sql)           | Database tables and sample catalogue data                               |
 
 ## Known Demo Limitations
 
