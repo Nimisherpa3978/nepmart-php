@@ -1,0 +1,13 @@
+# Local environment values and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and machine-specific files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Runtime logs and local tunnel binaries
+*.log
+cloudflared.exe
